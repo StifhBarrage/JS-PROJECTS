@@ -1,6 +1,6 @@
 // imicios en el DOM formas de como navegar
 
-/*let elemento;
+let elemento;
 elemento = document.all;
 console.log(elemento);
 elemento = document;
@@ -26,10 +26,10 @@ imagenes.forEach((imagen) => {
 });
 
 
-*/
+
 
 //getElementById
-/*
+
 
 let elemento;
 let encabezado;
@@ -47,12 +47,12 @@ encabezado.style.padding = '5px';
 encabezado.style.fontWeight = '900';
 encabezado.innerText = 'los mejores cursos';
 console.log(encabezado);
-*/
+
 
 //query selector selecciona tanto clases, elementos, id, pero con las sintaxis de CSS
 //devuelve unicamente un elemento o nodo
 
-/*
+
 const encabezado = document.querySelector('#encabezado');
 encabezado.style.background = 'yellow';
 encabezado.style.color = '#0A14DC';
@@ -71,7 +71,7 @@ console.log(enlace);
 
 // llamar a varios elementos  class, html tag, [#] selection of  html colection
 
-/*
+
 enlaces = document.getElementsByClassName('enlace')[3];
 
 enlaces.style.background = '#147804';
@@ -90,25 +90,22 @@ enlaces_a.forEach((enlace) => {
 
 });
 
-*/
 
 
 // traversing
 // children[#].children[0].children
 // chilelement - last - first - count
 
-/*
+
 const navegacion = document.querySelector('#principal');
 console.log(navegacion.nodeName);
 console.log(navegacion.children[0].nodeName); // childnodes pero devuleve toda clase denodos
 console.log(navegacion.children[0].textContent = 'nuevo enlace');
-*/
+
 
 
 // parentElement que es para el traversing pero a la inversa osea 'en padre'
 // primos hermano sibling next - previous : ir hacia a delante y hacia atras en nodos o elemento hermanos
-
-/*
 
 const cursos = document.querySelectorAll('.card');
 console.log(cursos[0].parentElement.parentElement.parentElement.children[0].textContent = 'hola desde traversing');
@@ -116,9 +113,6 @@ console.log(cursos[0].parentElement.parentElement.parentElement.children[0].text
 const enlaces = document.querySelectorAll('.enlace');
 console.log(enlaces[0].nextElementSibling.nextElementSibling.nextElementSibling.previousElementSibling);
 
-*/
-
-/*
 
 //crear elemento
 const enlace = document.createElement('a');
@@ -134,11 +128,11 @@ enlace.textContent = 'nuevo enlace';
 // agregarlo a HTML
 document.querySelector('#secundaria').appendChild(enlace);
 
-*/
+
 
 // remplazar elemento
 
-/*
+
 
 const nuevoEncabezado =  document.createElement('h2');
 nuevoEncabezado.style.color = 'red';
@@ -148,7 +142,6 @@ const encabezadoOriginal = document.querySelector('#encabezado');
 const elpadre = document.querySelector('#lista-cursos');
 elpadre.replaceChild(nuevoEncabezado, encabezadoOriginal);
 
-*/
 
 
 const primerLi = document.querySelector('.enlace');
@@ -170,6 +163,14 @@ console.log(elemento);
 
 primerLi.addEventListener('click',(e) => {
   console.log(e.type);
-});
+
+
+
+for (var i =  0; i <= 25; i++) {
+	console.log(i);
+
+}
+
+
 
 
