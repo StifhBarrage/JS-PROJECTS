@@ -1,4 +1,4 @@
-// imicios en el DOM formas de como navegar
+/* // imicios en el DOM formas de como navegar
 
 let elemento;
 elemento = document.all;
@@ -66,7 +66,6 @@ let enlace;
 enlace = document.querySelector('#principal a:nth-child(3)'); // last-child, first-child
 console.log(enlace);
 
-*/
 
 
 // llamar a varios elementos  class, html tag, [#] selection of  html colection
@@ -155,22 +154,18 @@ primerLi.getAttribute('href'); // para traer
 primerLi.setAttribute('href', 'http://facebook.com'); // para insertar
 elemento = primerLi.hasAttribute('href'); // para ver si existe
 
-console.log(elemento);
+console.log(elemento); */
 
+const html = document.querySelectorAll('body');
 
+console.log(html);
 
-
-
-primerLi.addEventListener('click',(e) => {
-  console.log(e.type);
-
-
-
-for (var i =  0; i <= 25; i++) {
-	console.log(i);
-
-}
-
+const new_h1 = document.createElement('h2');
+new_h1.appendChild(document.createTextNode('the better courses'));
+new_h1.id = 'header';
+const before = document.querySelector('#encabezado');
+const the_father = document.querySelector('#lista-cursos');
+the_father.replaceChild(new_h1, before);
 
 
 
