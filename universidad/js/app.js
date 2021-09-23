@@ -167,5 +167,21 @@ const before = document.querySelector('#encabezado');
 const the_father = document.querySelector('#lista-cursos');
 the_father.replaceChild(new_h1, before);
 
+search_button = document.querySelector('#submit-buscador')
+
+search_button.addEventListener('click', (e) => {
+	e.preventDefault();
+	window.location.href = 'https://github.com/StifhBarrage';
+	console.log(e.type);
+});
+search_button.addEventListener('dblclick', (e) => {
+	e.preventDefault();
+	window.location.href = 'https://web.whatsapp.co';
+	console.log(e.type);
+});
+
+
+
+
 
 
