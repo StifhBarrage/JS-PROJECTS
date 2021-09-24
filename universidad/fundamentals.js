@@ -14,7 +14,7 @@ const cars = {
    engine: 6.1,
    year: 1995,
    brand: 'Chevrolet'
-}
+};
 
 for (const car in cars) {
    console.log(`${car} : ${cars[car]}`);

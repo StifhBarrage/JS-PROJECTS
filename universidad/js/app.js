@@ -167,7 +167,7 @@ const before = document.querySelector('#encabezado');
 const the_father = document.querySelector('#lista-cursos');
 the_father.replaceChild(new_h1, before);
 
-search_button = document.querySelector('#submit-buscador')
+search_button = document.querySelector('#submit-buscador');
 
 search_button.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -176,12 +176,13 @@ search_button.addEventListener('click', (e) => {
 });
 search_button.addEventListener('dblclick', (e) => {
 	e.preventDefault();
+	e.stopPropagation();
 	window.location.href = 'https://web.whatsapp.co';
 	console.log(e.type);
 });
 
+localStorage.setItem('cursos', 'javascript');
 
-
-
-
-
+if (localStorage.length == 1) {
+	console.log(`wi have one item and that item is ${localStorage}`);
+} 
