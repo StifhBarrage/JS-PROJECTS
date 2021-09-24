@@ -186,3 +186,4 @@ localStorage.setItem('cursos', 'javascript');
 if (localStorage.length == 1) {
 	console.log(`wi have one item and that item is ${localStorage}`);
 } 
+					
