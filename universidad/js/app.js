@@ -181,9 +181,9 @@ search_button.addEventListener('dblclick', (e) => {
 	console.log(e.type);
 });
 
-localStorage.setItem('cursos', 'javascript');
+/* localStorage.setItem('cursos', 'javascript');
 
 if (localStorage.length == 1) {
 	console.log(`wi have one item and that item is ${localStorage}`);
-} 
+}  */
 					
